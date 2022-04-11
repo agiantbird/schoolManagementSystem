@@ -35,6 +35,18 @@ public class Student {
         this.grade = grade;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public int getGrade() {
+        return this.grade;
+    }
+
     public void updateFeesPaid(int feesPaid) {
         this.feesPaid += feesPaid;
     }
