@@ -35,6 +35,14 @@ public class Student {
         this.grade = grade;
     }
 
+    public int getFeesTotal() {
+        return this.feesTotal;
+    }
+
+    public int getFeesPaid() {
+        return this.feesPaid;
+    }
+
     public String getName() {
         return this.name;
     }
@@ -50,4 +58,6 @@ public class Student {
     public void updateFeesPaid(int feesPaid) {
         this.feesPaid += feesPaid;
     }
+
+
 }

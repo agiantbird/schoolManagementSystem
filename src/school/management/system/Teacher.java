@@ -27,7 +27,7 @@ public class Teacher {
         return this.salary;
     }
 
-    public void updateSalary(int newSalary) {
+    public void setSalary(int newSalary) {
         this.salary = newSalary;
     }
 }
