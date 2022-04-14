@@ -55,8 +55,13 @@ public class Student {
         return this.grade;
     }
 
-    public void updateFeesPaid(int feesPaid) {
+    public void payFees(int feesPaid) {
         this.feesPaid += feesPaid;
+        School.updateTotalMoneyEarned(feesPaid);
+    }
+
+    public int getRemainingFees() {
+        return feesTotal - feesPaid;
     }
 
 

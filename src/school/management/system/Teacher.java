@@ -8,11 +8,13 @@ public class Teacher {
     private int id;
     private String name;
     private int salary;
+    private int salaryEarned;
 
     public Teacher(int teacherId, String teacherName, int teacherSalary) {
         this.id = teacherId;
         this.name = teacherName;
         this.salary = teacherSalary;
+        this.salaryEarned = 0;
     }
 
     public String getName() {
@@ -29,5 +31,10 @@ public class Teacher {
 
     public void setSalary(int newSalary) {
         this.salary = newSalary;
+    }
+
+    public void receiveSalary(int salary) {
+        salaryEarned += salary;
+        School.updateTotalMoneyEarned(-salary);
     }
 }
